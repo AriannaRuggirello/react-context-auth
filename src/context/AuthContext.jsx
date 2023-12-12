@@ -13,9 +13,19 @@ function AuthProvider({ children }) {
     // informazioni dell'utente.
     const [user, setUser] = useState({});
 
+    // const navigate = useNavigate ();
+
     // handleLogin una funzione che effettuerà la
     // chiamata al backend per autenticare l'utente.
-    function handleLogin(payload) {
+    function handleLogin(payload) 
+    {
+        // finta verifica
+        // if(payload.email === "pincopallo@gmail.com" && payload.password === "password") {
+        //     setIsLoggedIn(true);
+        //     navigate("/dashboard")
+        //     } else {
+        //     throw new Error ("Le credenziali non sono corrette");
+        // }}
 
     // Qui effettueremo la chiama API al server backend
     }

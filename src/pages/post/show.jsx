@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useNavigation, useParams, useSearchParams } from "react-router-dom";
+import { Link,useNavigate, useNavigation, useParams, useSearchParams } from "react-router-dom";
 
 
 export default function Show(){
@@ -22,6 +22,13 @@ export default function Show(){
                 <img src="#" alt={post.image} />
                 <p>{post.content}</p>
                 <strong>{post?.category?.name}</strong>
+
+               
+                <Link className="font-medium text-blue-600 hover:underline dark:text-primary-500" to="/" > Torna alla home </Link>
+                
+
+                 
         </div>
+        
     );
 }
